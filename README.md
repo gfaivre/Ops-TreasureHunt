@@ -106,18 +106,18 @@ play_local_competition.sh
 * Si le script vous affiche SUCCESS, passez à l'étape 5,
 sinon relisez bien les consignes.
 
-## STEP 5 : MY FIRST COMPETITION
+## STEP 5 : MY EUROPEAN COMPETITION
 
-* Grâce à votre équipe fraichement formé, vous devez désormais 
-participer à une compétition locale.
+* Grâce à votre victoire dans la première compétition, vous pouvez désormais 
+participer à une compétition européenne.
 
 * Rendez accessible votre équipe de manière à ce qu'elle
-apparaisse dans le dossier Local_Competition sous le nom de 'My_Team'.
+apparaisse dans le dossier European_Competition sous le nom de 'My_Team'.
 
 * Enfin executez le script :
 
 ``` bash
-play_local_competition.sh
+play_european_competition.sh
 ```
 
 * Suivez les instructions affichées par le script, Si le script vous 
