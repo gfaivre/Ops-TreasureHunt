@@ -34,7 +34,7 @@ d'équipe. Nom de l'équipe, mail de contact, slogan
 
 ``` bash
 Name=NOM_DE_VOTRE_EQUIPE
-Slogan=SLOGAN_DE_VOTRE_EQUIPE
+Motto=SLOGAN_DE_VOTRE_EQUIPE
 Email=VOTRE@ADRESSE_MAIL
 ```
 
