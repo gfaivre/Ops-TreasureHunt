@@ -1,0 +1,5 @@
+treasure:
+    build: .
+    volumes:
+      - ${PWD}:/root/treasure
+
