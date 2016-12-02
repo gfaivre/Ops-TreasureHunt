@@ -41,7 +41,7 @@ Email=VOTRE@ADRESSE_MAIL
 * Ensuite executer le script :
 
 ``` bash
-subscribe_team.sh
+./subscribe_team.sh
 ```
 
 * Si le script vous indiques SUCCESS, passez à l'étape 2,
@@ -55,7 +55,7 @@ les consignes.
 budget.
 
 * Dans le dossier sponsors, vous trouverez plusieurs
-fichier sponsors, à vous de déterminer lesquels vous
+fichier Sponsors, à vous de déterminer lesquels vous
 rapporterons le plus d'argents, mais attention les règles
 de la compétition vous permettent de recruter un maximum
 de 4 sponsors !
@@ -63,11 +63,11 @@ de 4 sponsors !
 * Une fois vos choix effectués vous devez déplacer les
 fichiers .sponsor correspondant dans le dossier My_Sponsors
 
-* Lorsque vous avez 4 fichiers .sponsor dans le dossier
+* Lorsque vous avez 3 fichiers *.sponsor dans le dossier
 My_Sponsors vous pouvez executer le script :
 
 ``` bash
-validate_sponsors.sh
+./validate_sponsors.sh
 ```
 
 * Si le script vous indiques SUCCESS, passez à l'étape 3,
@@ -76,13 +76,13 @@ les consignes.
 
 ## STEP 3 : MY PLAYERS
 
-* Vous avez désormais un budget pour recruter vos joueurs
-, tout comme les sponsors vous devez chercher les joueurs
+* Vous avez désormais un budget pour recruter vos joueurs,
+tout comme les sponsors vous devez chercher les joueurs
 avec le meilleurs niveau et correspondant avec votre budget.
 
 * 15 Joueurs maximum peuvent être recruté, pour ce faire,
 vous devez déplacer les joueurs du dossier Players au
-dossier My_Players.
+dossier My_Players. (il faudra créer le répertoire My_Players)
 
 * Enfin executez le script :
 
@@ -98,8 +98,8 @@ sinon relisez bien les consignes.
 * Grâce à votre équipe fraichement formé, vous devez désormais 
 participer à une compétition locale.
 
-* Rendez accessible votre équipe de manière à ce qu'elle
-apparaisse dans le dossier Local_Competition sous le nom de 'My_Team'.
+* Pour inscrire votre équipe, il faut copier vos joueurs dans
+les répertoire Local_Competition/My_Team
 
 * Enfin executez le script :
 
@@ -114,8 +114,8 @@ sinon relisez bien les consignes.
 * Grâce à votre victoire dans la première compétition, vous pouvez désormais 
 participer à une compétition européenne.
 
-* Rendez accessible votre équipe de manière à ce qu'elle
-apparaisse dans le dossier European_Competition sous le nom de 'My_Team'.
+* Pour inscrire votre équipe, il faut copier vos joueurs dans
+les répertoire European_Competition/My_Team
 
 * Enfin executez le script :
 
@@ -126,5 +126,3 @@ play_european_competition.sh
 * Suivez les instructions affichées par le script, Si le script vous 
 affiche SUCCESS bravo vous avez terminé ce jeu ! Sinon relisez bien 
 les consignes.
-
-
