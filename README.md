@@ -3,10 +3,10 @@
 ## INTRODUCTION
 
 * Ajourd'hui, vous êtes un entraineur d'une petite équipe
-de foot. Avec peux de joueurs et sans sponsors vous allez
+de foot. Avec peu de joueurs et sans sponsor vous allez
 devoir vous dépasser pour recruter les meilleurs des
 meilleurs avec votre budget de départ et celui que vous
-récupérerez grâce à vos futur sponsors.
+récupérerez grâce à vos futurs sponsors.
 
 * Vos talents de négociations, votre ruse et votre
 maitrise du terminal vous seront d'une grande aide durant
@@ -24,10 +24,13 @@ man man
 ## STEP 1 : MY TEAM
 
 * Pour commencer il vous faut créer votre fichier
-d'équipe. Nom de l'équipe, Email de contact, Slogan
+d'équipe. Nom de l'équipe, mail de contact, slogan
 (Le mail sera votre mail digital-grenoble)
+
+```
 ==> Le fichier doit être : my_team.txt
 ==> Le contenu du fichier doit être du format :
+```
 
 ``` bash
 Name=NOM_DE_VOTRE_EQUIPE
