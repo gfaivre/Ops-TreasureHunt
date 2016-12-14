@@ -6,7 +6,8 @@ STEP="STEP 5 : EUROPEAN COMPETITION"
 HISTORY_NAME="history_step5"
 HISTORY="/tmp/$HISTORY_NAME"
 
-EMAIL_PROF=j.marjollet@bh-technologies.com
+EMAIL_PROF=ops@campus-numerique-in-the-alps.com
+FROM_EMAIL=ops@campus-numerique-in-the-alps.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
@@ -96,7 +97,7 @@ then
 	    [Nn]* )
 	    	echo "################" ; echo -e "\e[31mGameOver, You have lost the competition\e[0m" ;
 	    	echo -e "\e[31mYou can restart the step or the game to win the competition !\e[0m" ; echo "################" ;
-	    	echo $'Step 5 : FAIL\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY $EMAIL_PROF
+	    	echo $'Step 5 : FAIL\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
 	    	exit 1 ;;
 
 	    * ) echo "Please answer Yes (Y) or No (N)" ;;
@@ -105,5 +106,5 @@ then
 else
     echo -e "\n\e[92mSUCCESS\e[0m : You won the competition !"
     cp ~/.bash_history /tmp/$HISTORY_NAME
-    echo $'Step 5 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -a $HISTORY $EMAIL_PROF
+    echo $'Step 5 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
 fi    

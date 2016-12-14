@@ -4,7 +4,7 @@
 TEAM_FILE="my_team.txt"
 STEP="STEP 1 : MY TEAM"
 
-EMAIL_PROF=jeremy@marjollet.net
+EMAIL_PROF=ops@campus-numerique-in-the-alps.com
 FROM_EMAIL=ops@campus-numerique-in-the-alps.com
 
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`

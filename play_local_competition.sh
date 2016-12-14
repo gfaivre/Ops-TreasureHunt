@@ -6,7 +6,7 @@ STEP="STEP 4 : MY FIRST COMPETITION"
 HISTORY_NAME="history_step4"
 HISTORY="/tmp/$HISTORY_NAME"
 
-EMAIL_PROF=j.marjollet@bh-technologies.com
+EMAIL_PROF=ops@campus-numerique-in-the-alps.com
 FROM_EMAIL=ops@campus-numerique-in-the-alps.com
 
 TEAM_FILE="my_team.txt"

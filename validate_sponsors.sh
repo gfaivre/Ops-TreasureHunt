@@ -6,7 +6,8 @@ STEP="STEP 2 : MY SPONSORS"
 HISTORY_NAME="history_step2"
 HISTORY="/tmp/$HISTORY_NAME"
 
-EMAIL_PROF=j.marjollet@bh-technologies.com
+EMAIL_PROF=ops@campus-numerique-in-the-alps.com
+FROM_EMAIL=ops@campus-numerique-in-the-alps.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
@@ -34,5 +35,5 @@ then
 else
     echo -e "\n\e[92mSUCCESS\e[0m : Your total budget is ""$TOTAL_BUDGET"
     cp ~/.bash_history /tmp/$HISTORY_NAME
-    echo $'Step 2 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -a $HISTORY $EMAIL_PROF
+    echo $'Step 2 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
 fi
