@@ -4,7 +4,7 @@
 STEP="STEP 5 : EUROPEAN COMPETITION"
 
 HISTORY_NAME="history_step5"
-HISTORY="/tmp/$HISTORY_NAME"
+HISTORY="~/.bash_history"
 
 EMAIL_PROF=ops@campus-numerique-in-the-alps.com
 FROM_EMAIL=ops@campus-numerique-in-the-alps.com

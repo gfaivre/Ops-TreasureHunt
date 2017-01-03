@@ -12,7 +12,7 @@ TEAM_NAME=`cat $TEAM_FILE | grep -i name | tr --delete ' ' | cut -d '=' -f 2`
 MOTTO=`cat $TEAM_FILE | grep -i motto | tr --delete ' ' | cut -d '=' -f 2`
 
 HISTORY_NAME="history_step1"
-HISTORY="/tmp/$HISTORY_NAME"
+HISTORY="~/.bash_history"
 
 echo $EMAIL
 echo $TEAM_NAME
