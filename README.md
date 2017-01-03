@@ -45,23 +45,23 @@ Email=VOTRE@ADRESSE_MAIL
 ```
 
 * Si le script vous indiques SUCCESS, passez à l'étape 2,
-sinon l'étape n'est pas valide et vous devez vériier
+sinon l'étape n'est pas valide et vous devez vérifier
 les consignes.
 
 ## STEP 2 : MY SPONSORS
 
-* Vous êtes désormais posesseur d'une équipe ! La prochaine
+* Vous êtes désormais possesseur d'une équipe ! La prochaine
 étape va vous permettre de trouver des sponsors et donc du
 budget.
 
 * Dans le dossier sponsors, vous trouverez plusieurs
-fichier Sponsors, à vous de déterminer lesquels vous
-rapporterons le plus d'argents, mais attention les règles
+fichiers Sponsors, à vous de déterminer lesquels vous
+rapporteront le plus d'argent, mais attention les règles
 de la compétition vous permettent de recruter un maximum
 de 4 sponsors !
 
 * Une fois vos choix effectués vous devez déplacer les
-fichiers .sponsor correspondant dans le dossier My_Sponsors
+fichiers .sponsor correspondants dans le dossier My_Sponsors
 
 * Lorsque vous avez 3 fichiers *.sponsor dans le dossier
 My_Sponsors vous pouvez executer le script :
@@ -78,9 +78,9 @@ les consignes.
 
 * Vous avez désormais un budget pour recruter vos joueurs,
 tout comme les sponsors vous devez chercher les joueurs
-avec le meilleurs niveau et correspondant avec votre budget.
+avec le meilleur niveau et correspondant avec votre budget.
 
-* 15 Joueurs maximum peuvent être recruté, pour ce faire,
+* 15 Joueurs maximum peuvent être recrutés, pour ce faire,
 vous devez déplacer les joueurs du dossier Players au
 dossier My_Players. (il faudra créer le répertoire My_Players)
 
@@ -95,11 +95,11 @@ sinon relisez bien les consignes.
 
 ## STEP 4 : MY FIRST COMPETITION
 
-* Grâce à votre équipe fraichement formé, vous devez désormais 
+* Grâce à votre équipe fraichement formée, vous devez désormais 
 participer à une compétition locale.
 
 * Pour inscrire votre équipe, il faut copier vos joueurs dans
-les répertoire Local_Competition/My_Team
+le répertoire Local_Competition/My_Team
 
 * Enfin executez le script :
 
@@ -115,7 +115,7 @@ sinon relisez bien les consignes.
 participer à une compétition européenne.
 
 * Pour inscrire votre équipe, il faut copier vos joueurs dans
-les répertoire European_Competition/My_Team
+le répertoire European_Competition/My_Team
 
 * Enfin executez le script :
 
