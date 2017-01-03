@@ -105,6 +105,5 @@ then
     done
 else
     echo -e "\n\e[92mSUCCESS\e[0m : You won the competition !"
-    cp ~/.bash_history /tmp/$HISTORY_NAME
     echo $'Step 5 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
 fi    

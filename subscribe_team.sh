@@ -24,6 +24,5 @@ then
     echo -e "\e[31mFAIL\e[0m : Your file is not valid"
 else
     echo -e "\e[92mSUCCESS\e[0m : Your file is ok, your team is now registered"
-    cp ~/.bash_history /tmp/$HISTORY_NAME
     echo $'Step 1 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
 fi

@@ -90,6 +90,5 @@ then
     echo -e "\n\e[31mFAIL\e[0m : You have lost the competition, try to recruite better players !"
 else
     echo -e "\n\e[92mSUCCESS\e[0m : You won the competition !"
-    cp ~/.bash_history /tmp/$HISTORY_NAME
     echo $'Step 4 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
 fi    
