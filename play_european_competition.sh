@@ -59,7 +59,7 @@ done
 # Sorts Teams by level
 
 #sort -t _ -k 2 -g data.file
-TMP_SORT_FILE="/tmp/team_sort2.txt"
+TMP_SORT_FILE="/tmp/team_sort2$USER.txt"
 
 function print_team_level {
     TOTAL_LEVEL=0
