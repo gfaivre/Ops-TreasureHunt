@@ -2,7 +2,7 @@
 
 ## INTRODUCTION
 
-* Ajourd'hui, vous êtes un entraineur d'une petite équipe
+* Aujourd'hui, vous êtes un entraineur d'une petite équipe
 de foot. Avec peu de joueurs et sans sponsor vous allez
 devoir vous dépasser pour recruter les meilleurs des
 meilleurs avec votre budget de départ et celui que vous
@@ -24,8 +24,8 @@ man man
 ## STEP 1 : MY TEAM
 
 * Pour commencer il vous faut créer votre fichier
-d'équipe. Nom de l'équipe, mail de contact, slogan
-(Le mail sera votre mail digital-grenoble)
+d'équipe contenant le nom de l'équipe, mail de contact, slogan
+(Le mail sera votre mail campus numérique)
 
 ```
 ==> Le fichier doit être : my_team.txt
@@ -58,7 +58,7 @@ budget.
 fichiers Sponsors, à vous de déterminer lesquels vous
 rapporteront le plus d'argent, mais attention les règles
 de la compétition vous permettent de recruter un maximum
-de 4 sponsors !
+de 3 sponsors !
 
 * Une fois vos choix effectués vous devez déplacer les
 fichiers .sponsor correspondants dans le dossier My_Sponsors
@@ -87,7 +87,7 @@ dossier My_Players. (il faudra créer le répertoire My_Players)
 * Enfin executez le script :
 
 ``` bash
-recruite_players.sh
+./recruite_players.sh
 ```
 
 * Si le script vous affiche SUCCESS, passez à l'étape 4,
@@ -104,7 +104,7 @@ le répertoire Local_Competition/My_Team
 * Enfin executez le script :
 
 ``` bash
-play_local_competition.sh
+./play_local_competition.sh
 ```
 * Si le script vous affiche SUCCESS, passez à l'étape 5,
 sinon relisez bien les consignes.
@@ -120,7 +120,7 @@ le répertoire European_Competition/My_Team
 * Enfin executez le script :
 
 ``` bash
-play_european_competition.sh
+./play_european_competition.sh
 ```
 
 * Suivez les instructions affichées par le script, Si le script vous 

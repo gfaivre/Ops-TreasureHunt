@@ -24,7 +24,7 @@ do
     NB_SPONSORS=$(($NB_SPONSORS + 1))
 done
 
-if [[ $NB_SPONSORS -le 0 || $NB_SPONSORS -gt 20 ]]
+if [[ $NB_SPONSORS -le 0 || $NB_SPONSORS -gt 3 ]]
 then
     if [[ $NB_SPONSORS -le 0 ]]
     then
