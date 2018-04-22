@@ -18,8 +18,6 @@ echo $EMAIL
 echo $TEAM_NAME
 echo $MOTTO
 
-echo realpath ${HISTORY}
-
 if [[ $EMAIL = "" || $TEAM_NAME = "" || $MOTTO = "" ]]
 then
     echo -e "\e[31mFAIL\e[0m : Your file is not valid"
