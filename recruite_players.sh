@@ -6,8 +6,8 @@ STEP="STEP 3 : MY PLAYERS"
 HISTORY_NAME="history_step3"
 HISTORY="~/.bash_history"
 
-EMAIL_PROF=ops@campus-numerique-in-the-alps.com
-FROM_EMAIL=ops@campus-numerique-in-the-alps.com
+EMAIL_PROF=guewen.faivre@elao.com
+FROM_EMAIL=guewen.faivre@elao.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
@@ -23,10 +23,10 @@ for PLAYERS in `ls -1 $PLAYERS_FOLDER/*.player | cut -d '/' -f 2`
 do
     # Process players and print level + cost
     P_LEVEL=`cat $PLAYERS_FOLDER/$PLAYERS | grep LEVEL | cut -d '=' -f 2`
-    P_COST=`cat $PLAYERS_FOLDER/$PLAYERS | grep VALUE | cut -d '=' -f 2`    
+    P_COST=`cat $PLAYERS_FOLDER/$PLAYERS | grep VALUE | cut -d '=' -f 2`
     TOTAL_LEVEL=$(($TOTAL_LEVEL + `cat $PLAYERS_FOLDER/$PLAYERS | grep LEVEL | cut -d '=' -f 2`))
     TOTAL_COST=$(($TOTAL_COST + `cat $PLAYERS_FOLDER/$PLAYERS | grep VALUE | cut -d '=' -f 2`))
-    echo "$PLAYERS with level : $P_LEVEL and cost : $P_COST €" 
+    echo "$PLAYERS with level : $P_LEVEL and cost : $P_COST €"
     NB_PLAYERS=$(($NB_PLAYERS + 1))
 done
 
@@ -55,7 +55,7 @@ fi
 if [[ $TOTAL_COST -gt $TOTAL_BUDGET ]]
 then
     echo -e "\n\e[31mFAIL\e[0m : Your players cost exceeded your total budget : $TOTAL_COST / $TOTAL_BUDGET"
-else    
+else
     echo -e "\n\e[92mSUCCESS\e[0m : Your total level is ""$TOTAL_LEVEL | Your players cost : $TOTAL_COST / $TOTAL_BUDGET"
     echo $'Step 3 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
 fi

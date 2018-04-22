@@ -6,8 +6,8 @@ STEP="STEP 4 : MY FIRST COMPETITION"
 HISTORY_NAME="history_step4"
 HISTORY="~/.bash_history"
 
-EMAIL_PROF=ops@campus-numerique-in-the-alps.com
-FROM_EMAIL=ops@campus-numerique-in-the-alps.com
+EMAIL_PROF=guewen.faivre@elao.com
+FROM_EMAIL=guewen.faivre@elao.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
@@ -23,7 +23,7 @@ if [[ -d $PLAYERS_FOLDER ]]
 then
     echo -e "\n\e[92mOK:\e[0m Your Team is ready "
 else
-    echo -e "\n\e[31mFAIL\e[0m Your team is not ready for the local competition"	
+    echo -e "\n\e[31mFAIL\e[0m Your team is not ready for the local competition"
 fi
 
 # Players level and cost check
@@ -32,7 +32,7 @@ for PLAYERS in `ls -1 $PLAYERS_FOLDER/*.player | cut -d '/' -f 3`
 do
     # Process players and print level + cost
     P_LEVEL=`cat $PLAYERS_FOLDER/$PLAYERS | grep LEVEL | cut -d '=' -f 2`
-    P_COST=`cat $PLAYERS_FOLDER/$PLAYERS | grep VALUE | cut -d '=' -f 2`    
+    P_COST=`cat $PLAYERS_FOLDER/$PLAYERS | grep VALUE | cut -d '=' -f 2`
     TOTAL_LEVEL=$(($TOTAL_LEVEL + `cat $PLAYERS_FOLDER/$PLAYERS | grep LEVEL | cut -d '=' -f 2`))
     TOTAL_COST=$(($TOTAL_COST + `cat $PLAYERS_FOLDER/$PLAYERS | grep VALUE | cut -d '=' -f 2`))
     NB_PLAYERS=$(($NB_PLAYERS + 1))
@@ -91,4 +91,4 @@ then
 else
     echo -e "\n\e[92mSUCCESS\e[0m : You won the competition !"
     echo $'Step 4 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
-fi    
+fi

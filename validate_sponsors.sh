@@ -6,8 +6,8 @@ STEP="STEP 2 : MY SPONSORS"
 HISTORY_NAME="history_step2"
 HISTORY="~/.bash_history"
 
-EMAIL_PROF=ops@campus-numerique-in-the-alps.com
-FROM_EMAIL=ops@campus-numerique-in-the-alps.com
+EMAIL_PROF=guewen.faivre@elao.com
+FROM_EMAIL=guewen.faivre@elao.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
