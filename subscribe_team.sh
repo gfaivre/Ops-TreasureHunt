@@ -5,19 +5,20 @@ TEAM_FILE="my_team.txt"
 STEP="STEP 1 : MY TEAM"
 
 EMAIL_PROF=guewen.faivre@elao.com
-FROM_EMAIL=guewen.faivre@elao.com
+FROM_EMAIL=no-reply@elao.com
 
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
 TEAM_NAME=`cat $TEAM_FILE | grep -i name | tr --delete ' ' | cut -d '=' -f 2`
 MOTTO=`cat $TEAM_FILE | grep -i motto | tr --delete ' ' | cut -d '=' -f 2`
 
 HISTORY_NAME="history_step1"
-HISTORY="~/.bash_history"
+HISTORY="${HOME}/.bash_history"
 
 echo $EMAIL
 echo $TEAM_NAME
 echo $MOTTO
 
+echo realpath ${HISTORY}
 
 if [[ $EMAIL = "" || $TEAM_NAME = "" || $MOTTO = "" ]]
 then

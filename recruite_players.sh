@@ -4,10 +4,10 @@
 STEP="STEP 3 : MY PLAYERS"
 
 HISTORY_NAME="history_step3"
-HISTORY="~/.bash_history"
+HISTORY="${HOME}/.bash_history"
 
 EMAIL_PROF=guewen.faivre@elao.com
-FROM_EMAIL=guewen.faivre@elao.com
+FROM_EMAIL=no-reply@elao.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
